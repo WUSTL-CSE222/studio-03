@@ -19,7 +19,7 @@ var autoOffTimeSlider
 
 // Utility Function: Convert an RGB values (in tegers) to a string for use in HTML/CSS styles.
 function rgb(r,g,b) {
-  return "rgb(" + r + "," + g + ","  b + ")";
+  return "rgb(" + r + "," + g + "," + b + ")";
 }
 
 // Update the current color to reflect the positions of the sliders
@@ -39,7 +39,7 @@ function setColorClicked(event) {
 }
 
 function redSliderChange(event) {
-  redLabel.text = redSlider.value
+  redLabel.innerText = redSlider.value
   updateCurrentColor()
 }
 
